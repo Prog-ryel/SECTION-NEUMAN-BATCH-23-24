@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <link rel="icon" type="image/x-icon" href="New Project 1 [8F40576].png">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>SECTION NEUMAN BATCH 23-24</title>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+  * {
+   font-family: 'Poppins', sans-serif;
+  }
+  body, html {
+   background-color: black;
+   
+  }
+  .btn::after 
+  {
+   content: "";
+   z-index: -1;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #333;
+   left: 0;
+   top: 0;
+   border-radius: 10px;
+  }
+  
+  .btn::before 
+  {
+   content: "";
+   background: linear-gradient(
+     45deg, #FF0000, #FF7300, #FFFB00, #48FF00, #00FFD5, #002BFF, #FF00CB, #FF0000
+   );
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   background-size: 600px;
+   z-index: -1;
+   width: calc(100% + 4px);
+   height: calc(100% + 4px);
+   filter: blur(8px);
+   animation: glowing 20s linear infinite;
+   transition: opacity .3s ease-in-out;
+   border-radius: 10px;
+   opacity: 1;
+  }
+  @keyframes glowing {
+   0% {background-position: 0 0;}
+   50% {background-position: 400% 0;}
+   100% {background-position: 0 0;}
+  }
+  .btn {
+   padding: 10px 25px;
+   font-size: 8px;
+   border: none;
+   outline: none;
+   color: #FFF;
+   cursor: pointer;
+   position: relative;
+   z-index: 0;
+   border-radius: 10px;
+   margin-left: 7rem;
+  }
+  h1 {
+   margin-left: 0.8rem;
+   font-size: 20px;
+   display: flex;
+   height: 4vh;
+   color: #fff;
+   font-weight: bolder;
+  /*/ background-image: linear-gradient(-25deg, #F40202, #F40202, #02F4A7, #02DEF4);/*/
+   background-size: 300% 300%;
+   /*/animation: gradient 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;/*/
+   background-image: linear-gradient(
+     45deg, #FF0000, #FF7300, #FFFB00, #48FF00, #00FFD5, #002BFF, #FF00CB, #FF0000
+   );
+   animation: glowing 20s linear infinite;
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+  }
+  
+  @keyframes glowing {
+   0% {
+    background-position: 0% 0%;
+   }
+   50% {
+    background-position: 400% 0%;
+   }
+   100% {
+    background-position: 0% 0%;
+   }
+  }
+  .img {
+   width: 130px;
+   height: 160px;
+   margin-left: 7rem; 
+   border-radius: ;
+   border: px solid blue;
+   filter: drop-shadow(1px 1px 15px #009DFF);
+   -webkit-animation:spin 5s linear infinite;
+    -moz-animation:spin 5s linear infinite;
+    animation:spin 5s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+.preset {
+ margin-top: 20rem;
+}
+.gwapa {
+ position: absolute;
+   width: 115px;
+   height: 190px;
+   margin-left: 1px;
+   border-radius: 10px
+   transition: all 0.5s;
+   clip-path: circle(95% at 50% 30%);
+ 
+ }
+.card {
+   position: relative;
+   width: 116px;
+   height: 191px;
+   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+   background: black;
+   margin-left: 30px;
+  }
+ .card:hover {
+   box-shadow: none;
+   border-radius: 10px;
+  }
+ .card:hover .gwapa {
+   clip-path: circle(33% at 49.5% 36%);
+  }
+  .card:hover .gwapa {
+   filter: drop-shadow(1px 1px 15px #02F4EA);
+   transform: translateY(0)
+   transition-delay: 0.8s;
+  }
+  .position {
+   margin-bottom: 30rem;
+   font-size: 8px;
+  }
+  .card:hover p,
+  .card:hover position {
+   opacity: 5;
+   transform: translateY(0);
+   transition-delay: 0s;
+   text-align: center;
+   padding-top: 8rem;
+   color: #00F6B2;
+  }
+  .justifyser,
+  .justifys,
+  .justify {
+   display: flex;
+   margin-left: 20px;
+  }
+  h2 {
+   text-align: center;
+   color: white;
+  }
+  .gwapa {
+   border-radius: 10px;
+   border: 2px solid deepskyblue;
+   filter: drop-shadow(1px 1px 10px #02F4EA);
+  }
+
+  
+  .div-class {
+   border: 2px solid blue;
+   border-radius: 10px;
+  }
+  .div-class:hover {
+   filter: drop-shadow(1px 1px 10px #02F4EA);
+  }
+  .div-classic {
+   border: 2px solid pink;
+   border-radius: 10px;
+  }
+  label {
+   color: white;
+  font-size: 10px;
+  }
+  .label {
+   font-size: 9px;
+  }
+  .labels {
+   text-align: center;
+   font-size: 11px;
+  }
+  .grade {
+   text-align: center;
+   font-size: 15px;
+   margin-bottom: 10px;
+   font-weight: bolder;
+  /*/ background-image: linear-gradient(-25deg, #F40202, #F40202, #02F4A7, #02DEF4);/*/
+   background-size: 300% 300%;
+   /*/animation: gradient 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;/*/
+   background-image: linear-gradient(
+     45deg, #FF0000, #FF7300, #FFFB00, #48FF00, #00FFD5, #002BFF, #FF00CB, #FF0000
+   );
+   animation: glowing 20s linear infinite;
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+  }
+  
+  @keyframes glowing {
+   0% {
+    background-position: 0% 0%;
+   }
+   50% {
+    background-position: 400% 0%;
+   }
+   100% {
+    background-position: 0% 0%;
+   }
+  }
+  }
+  .boys {
+   text-align: center;
+  }
+  .male {
+   border: 2px solid blue;
+   border-radius: 10px;
+  }
+  .female {
+   border: 2px solid hotpink;
+   border-radius: 10px;
+  }
+  .manuel {
+   width: 150px;
+   height: 200px;
+   border-radius: 10px;
+   border: 1.5px solid deepskyblue;
+  }
+  .manuels {
+   width: 150px;
+   height: 200px;
+   border-radius: 10px;
+   margin-left: 6.9rem;
+   border: 1.5px solid deepskyblue;
+  }
+  .has {
+   width: 320px;
+   height: 250px;
+   border-radius: 10px;
+   margin-left: 1.5rem;
+   border: 1.5px solid deepskyblue;
+  }
+  .man-rye {
+   margin-left: 1.8rem;
+  }
+ </style>
+ <br>
+ <img class="img" src="projectIMG_20240627_161718.png.jpg" alt="">
+ <h1>INFORMATIC COMPUTER INSTITUTE</h1>
+ <h2 class="grade">GRADE 12 SECTION 2 NEUMAN</h2>
+ <label>batch (2023-2024)</label>
+ <label>Hover effects in picture</label> <br>
+ <label class="label">(Click the picture!)</label>
+ <hr>
+</head>
+  <body>
+   <div class="div-classic">
+   <br>
+   <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="bb_20240625_154612.jpg" alt="">
+     <p class="position"><b>BACHELOR OF SCIENCE IN ELECTRONICS AND COMMUNICATION ENGINEERING</b><br><br>
+           LENNETH TADEO QUIBUYEN 
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src="ryelIMG_20240627_103255.jpg" alt="">
+   
+       <p class="position"><b>BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</b><br><br>
+           RYEL JARANTA MAGHANOY
+         </p>
+         </div>
+       </div>
+     <br>
+   </div>
+      <hr>
+         <h2 class="boys">MALE</h2>
+       <div class="male">
+       <br>
+      <div class="justify">
+    <div class="card">
+   <img class="gwapa" src="My classmates /yuIMG_20240626_214339.jpg" alt="">
+     <p class="position"><b></b><br><br>
+          YU, JAYMARK CONCON  
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /samIMG_20240626_214406.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           VALLE, SAMJONES FELIPE
+         </p>
+         </div>
+       </div>
+       
+       <br>
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /rollyIMG_20240626_214806.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           BUDIAS, ROLLY BOY CALIMPO 
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src="My classmates /robertIMG_20240626_214825.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           BENGUILIO, ROBERT
+         </p>
+         </div>
+       </div>
+       <br>
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /renierIMG_20240626_215010.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           FRANCISCO, RENIER CULLANTES 
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /nonotIMG_20240626_214704.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           GOGO, JUSTINE ALFONSO
+         </p>
+         </div>
+       </div>
+       <br>
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /nobertIMG_20240626_214509.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           PABLO, NOBERT MANSA-ANAN 
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /monteroIMG_20240626_215153.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           MONTERO, ADRIAN
+         </p>
+         </div>
+       </div>
+       <br>
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /mjIMG_20240626_215230.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+          PANGANORON, MARK JADE 
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /micoIMG_20240626_214453.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           QUIMSON, MICO VILLA
+         </p>
+         </div>
+       </div>
+       <br>
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /logoIMG_20240626_215108.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           LOGO, JHON BENEDICK NAVALES 
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /juvalIMG_20240626_215056.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           GUZMAN, JUVAL
+         </p>
+         </div>
+       </div>
+       <br>
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /joeyIMG_20240626_214648.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           HAVANA, JOEY MANGADLAO 
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /harrelIMG_20240626_214438.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           ROBLES, HARREL MANLICAYAN
+         </p>
+         </div>
+       </div>
+       <br>
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /goIMG_20240626_215041.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           GO, JYEPSY GONZALES 
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /dominicIMG_20240626_215214.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           ODVINA, DOMINIC
+         </p>
+         </div>
+       </div>
+       <br>
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /djIMG_20240626_214548.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           MENDOZA, JOMARK
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /decastroIMG_20240626_214923.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           CASTIGADOR, GEMARK
+         </p>
+         </div>
+       </div>
+       <br>
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /decasaIMG_20240626_214936.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           DECASA, STEPHEN JHON GLEOCAM
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /daxIMG_20240626_214951.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           ELLADORA, ROLDAN FUENTES
+         </p>
+         </div>
+       </div>
+       <br>
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /cabangIMG_20240626_214909.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           CABANG, CHRISTIAN DAVE
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /cabaIMG_20240626_214855.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           CABA, RANIEL JANIOLA
+         </p>
+         </div>
+       </div>
+       <br>
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /ayubanIMG_20240626_214840.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           AYUBAN, REXLLOYD  
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /ambotIMG_20240626_214616.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           MANLAPAZ, NATHAN BREYL BUDIAS
+         </p>
+         </div>
+       </div>
+       <br>
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /alwinIMG_20240626_214723.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           FUENTES, ALWIN PABLO
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /aljunelIMG_20240626_215127.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           MANLAPAZ, ALJUNEL MONTES
+           </p>
+          </div>
+         </div>
+        <br>
+       </div>
+      <br>
+      
+      
+         <h2 class="boys">FEMALE</h2>
+          <br>
+        <div class="female">
+      <br />
+    <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /trexieIMG_20240626_214424.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           TRILLES, TREXY DAG-UMAN 
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /perezIMG_20240626_215351.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           EJOC, ANGELYN PEREZ 
+         </p>
+         </div>
+       </div>
+      <br>
+      
+      <div class="justify">
+   <div class="card">
+   <img class="gwapa" src=" My classmates /palingIMG_20240626_215328.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           MACARIO, JENNETH MANSILHIGAN
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /mutyaIMG_20240626_214532.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           MUTYA, MENCHIE
+         </p>
+         </div>
+       </div>
+      <br>
+      
+      <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /micaIMG_20240626_215244.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           MANLICAYAN, MICHA DURANGO
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /maritesIMG_20240626_214751.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           CABALLERO, LEAHJEAN BANAHAN 
+         </p>
+         </div>
+       </div>
+      <br>
+       
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /jenaIMG_20240626_215025.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           GERMINO, GENA RELANO 
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /jeanIMG_20240626_214635.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           HURTADO, JAY-ANN PECASALES 
+         </p>
+         </div>
+       </div>
+      <br>
+       
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /graceIMG_20240626_215309.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           MANLICAYAN, GRACE MENDOZA 
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /francineIMG_20240626_214602.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           MARQUEZ, FRANCINE
+         </p>
+         </div>
+       </div>
+      <br>
+       
+       <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="My classmates /datdatIMG_20240626_215141.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           MANLAPAZ, WILFREDA ABION
+         </p>
+         </div>
+            <div class="card">
+       <img class="gwapa" src=" My classmates /chivaIMG_20240626_214736.jpg" alt="">
+   
+       <p class="position"><b> </b><br><br>
+           CHIVA, MAE TRINE MUYUELA
+         </p>
+         </div>
+       </div>
+       <br>
+       
+        <div class="justify">
+   <div class="card">
+   <img class="gwapa" src="amoloIMG_20240627_121316.jpg" alt="">
+     <p class="position"><b> </b><br><br>
+           AMOLO, IRMILITA
+           </p>
+          </div>
+         </div>
+        <br>
+       </div>
+       <br><br><br><br><br><br><br><br>
+      <h2 class="boys">MEMORIES</h2>
+      <br>
+      
+      <div class="man-rye">
+       <img class="manuel" src="rIMG_20240306_142607.jpg" alt="">
+       <img class="manuel" src="Rye1710238460643.jpg" alt="">
+      </div>
+      
+      <div class="">
+       <img class="manuels" src="catsIMG_20240326_121842.jpg" alt="">
+       <img class="has" src="ha1712712506149.jpg" alt="">
+      </div>
+      
+      <div class="man-rye">
+       <img class="manuel" src="joe1714541959483.jpg" alt="">
+       <img class="manuel" src="prac1714550811090.jpg" alt="">
+      </div>
+      
+      <div class="">
+       <img class="has" src="last1714742232513.jpg" alt="">
+       <img class="manuels" src="hh1714742282262.jpg" alt="">
+      </div>
+      
+      <div class="">
+       <img class="has" src="gg1714742315563.jpg" alt="">
+       <img class="has" src="class1714742339490.jpg" alt="">
+      </div>
+      
+      <div class="">
+       <img class="has" src="jj1714742346636.jpg" alt="">
+       <img class="has" src="aa1714742361951.jpg" alt="">
+      </div>
+      
+      <div>
+       <img class="has" src="qq1714880698510.jpg" alt="">
+       <img class="has" src="ww1714880723399.jpg" alt="">
+      </div>
+      
+      <div>
+       <img class="has" src="rr1714880734500.jpg" alt="">
+       <img class="has" src="tt1714880745399.jpg" alt="">
+      </div>
+      
+      <div>
+       <img class="has" src="yy1714880915099.jpg" alt="">
+       <img class="has" src="uu1715303392567.jpg" alt="">
+      </div>
+      
+      <div>
+       <img class="has" src="ii1715303433710.jpg" alt="">
+       <img class="has" src="oo1715303436783.jpg" alt="">
+      </div>
+      
+      <div>
+       <img class="has" src="pp1715303601881.jpg" alt="">
+       <img class="has" src="ss1715303702713.jpg" alt="">
+      </div>
+      
+      <div>
+       <img class="has" src="dd1715303726201.jpg" alt="">
+       <img class="has" src="ff1716666725415.jpg" alt="">
+      </div>
+      <label class="labels">Tarung mog skwela ha pang libre dayun mog succesfull mo puhon haha "Goodluck to our journey guys☺️"</label>
+      
+     <br><br>
+    <button class="btn">2024 | Alrights Reserved <br><br>
+    ©developed by ryel-prog</button>
+  </body>
+  </html>
